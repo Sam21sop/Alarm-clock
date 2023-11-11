@@ -1,2 +1,1 @@
-# JavaScript-Beginner
-JavaScript for Beginner
+# Alarm Clock
