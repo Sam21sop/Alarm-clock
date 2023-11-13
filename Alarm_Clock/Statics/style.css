@@ -1,80 +1,83 @@
-/* Import Google font - Poppins */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 *{
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
 }
-body, .wrapper, .content{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 body{
-  padding: 0 10px;
-  min-height: 100vh;
-  background: #ee62cb;
-  font-family: Arial, sans-serif;
+  width: 100%;
+  height: 100vh;
+  place-items: center;
+  display: grid;
+  background-color: rgb(12, 230, 230);
 }
-.wrapper{
-  width: 440px;
-  padding: 30px 30px 38px;
-  background: #fff;
+
+.box{
+  width: 25%;
+  height: auto;
+  padding: 10px;
+  text-align: center;
+  background-color: blueviolet;
   border-radius: 10px;
-  flex-direction: column;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
+
+.box h1{
+  background-color: aliceblue;
+  text-align: center;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+
+.box h2{
+  background-color: aliceblue;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 5px;
+}
+
+.wrapper{
+  background-color: bisque;
+  border-radius: 10px;
+  padding: 10px;
+}
+
 .wrapper img{
-  max-width: 103px;
+  height: 60px;
+  width: 60px;
 }
-.wrapper h1{
-  font-size: 38px;
-  font-weight: 500;
-  margin: 30px 0;
+
+input{
+  display: block;
 }
-.wrapper .content{
-  width: 100%;
-  justify-content: space-between;
+
+.column{
+  display: inline-block;
 }
-.content.disable{
-  cursor: no-drop;
-}
-.content .column{
-  padding: 0 10px;
+
+.content{
+  background-color: white;
   border-radius: 5px;
-  border: 1px solid #bfbfbf;
-  width: calc(100% / 3 - 5px);
-}
-.content.disable .column{
-  opacity: 0.6;
-  pointer-events: none;
-}
-.column select{
-  width: 100%;
-  height: 53px;
-  border: none;
-  outline: none;
-  background: none;
-  font-size: 19px;
-}
-.wrapper button{
-  width: 100%;
-  border: none;
-  outline: none;
-  color: #fff;
-  cursor: pointer;
-  font-size: 20px;
-  padding: 17px 0;
-  margin-top: 20px;
-  border-radius: 5px;
-  background: #98e73e;
+  padding: 10px 10px;
 }
 
 #clock{
-  font-size: 2em;
+  text-align: center;
+  margin: 10px;
+  font-size: large;
+  font-weight:bolder;
+  font-family: 'Courier New', Courier, monospace;
 }
 
-#alarmList{
-  margin-top: 20px;
+button{
+  margin: 10px;
+  background-color: greenyellow;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+@media (max-width:760px) {
+  .box{
+    width: 95%;
+  }
 }

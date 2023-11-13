@@ -10,44 +10,42 @@
     </head>
     <body>
         <!-- container -->
-        <div class="wrapper">
+        <div class="box">
+            <h1>Alarm Clock</h1> 
+        
+            <div class="wrapper">
 
-            <!-- header section  -->
-            <h1>Alarm</h1>
-            <img src="./Statics/clock.png" alt="Not Found">
+                <!-- header section  -->
+                
+                <img src="./Statics/clock.png" alt="Not Found">
 
-            <!-- current clock  -->
-            <div id="clock"></div>
+                <!-- current Time  -->
+                <div id="clock"></div>
 
-            <!-- user input section  -->
-            <div class="content">
-                <div class="column">
-                    <label for="hours">Hours:</label>
-                    <input type="number" id="hours" min="1" max="12">
-                </div>
-                <div class="column">
-                    <label for="minutes">Minutes:</label>
-                    <input type="number" id="minutes" min="0" max="59">
-                </div>
-                <div class="column">
-                    <label for="seconds">Seconds:</label>
-                    <input type="number" id="seconds" min="0" max="59">
-                </div>
-                <div class="column">
-                    <label for="ampm">AM/PM:</label>
-                    <select id="ampm">
-                        <option value="AM">AM</option>
-                        <option value="PM">PM</option>
-                    </select>
+                <!-- user input section  -->
+                <div class="content">
+                    <div class="column">
+                        <input type="number" id="hours" min="1" max="12">
+                    </div>
+                    <div class="column">
+                        <input type="number" id="minutes" min="0" max="59">
+                    </div>
+                    <div class="column">
+                        <input type="number" id="seconds" min="0" max="59">
+                    </div>
+                    <div class="column">
+                        <select id="ampm">
+                            <option value="AM">AM</option>
+                            <option value="PM">PM</option>
+                        </select>
+                    </div>
                 </div>
             </div>
-
             <!-- set alarm and display alarm list  -->
             <button onclick="setAlarm()">Set Alarm</button>
             <h2>Alarm List</h2>
-            <ul id="alarmList"></ul>
+            <ul id="alarmList" style="list-style-type: none;"></ul>
         </div>
-
         <!-- External javascript -->
         <script src="./Statics/script.js"></script>
     </body>
