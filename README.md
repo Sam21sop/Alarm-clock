@@ -10,7 +10,7 @@ it is used for the style the content of the web page
 it is used for the behaviour to the web page
 
 
-### Features 
+# Features 
 1. Clock Face ==> Clock showing the current time (hh:mm:ss format)
 2. setAlarm ==> Here user can set alarm (set hh/mm/ss as they required)
 3. alarmList ==> user can see how many alarm he set uptill now
